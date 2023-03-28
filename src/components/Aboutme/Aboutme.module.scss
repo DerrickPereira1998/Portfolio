@@ -1,0 +1,35 @@
+@import 'styles/reset';
+@import 'styles/colors';
+
+.section{
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  &__title{
+    font-size: $titlefont;
+    margin-bottom: 50px;
+    text-align: center;
+    transition: 1s;
+    @include colorthemes;
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    &__image{
+      width: 180px;
+      height: 180px;
+      margin-right: 50px;
+      border-style: outset;
+      border-width: 5px;
+      border-color: $teal;
+    }
+    &__text{
+      max-width: 45%;
+      text-align: right;
+      @include colorthemes
+    }
+  }
+}

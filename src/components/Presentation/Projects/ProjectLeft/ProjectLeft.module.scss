@@ -1,0 +1,90 @@
+@import 'styles/colors';
+
+.back {
+  height: 400px;
+  width: 800px;
+  &__img {
+    height: 320px;
+    width: 460px;
+    float: right;
+    background-size: 100%;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    
+    &__titulo {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: left;
+      font-size: $titlefont;
+      transition: 1s;
+      @include colorthemes;
+    }
+    &__square {
+      background-color: $black;
+      height: auto;
+      width: 340px;
+      padding: 20px;
+      font-size: 14px;
+      color: $teal;
+      text-align: start;
+      box-shadow: 2px 2px 5px $black;
+      transition:1s;
+      &:hover{
+        box-shadow: 2px 4px 10px $black;
+      }
+    }
+  }
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 18px;
+    &__item{
+      margin-right: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      transition: 1s;
+      &:last-child{
+        margin-right: 0;
+      }
+      &__light{
+        color: $darkgray;
+      }
+      &__dark{
+        color: $lightteal;
+      }
+    }
+  }
+}
+
+.link{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 20px;
+  margin-top: 15px;
+  &:last-child{
+    padding-right:0;
+  }
+  @include colorthemes;
+  &__spacing{
+    margin-right: 10px;
+    transition: 1s;
+    &__light{
+      color: $darkgray;
+    }
+    &__dark{
+      color: $lightteal;
+    }
+    :hover{
+      color: $white;
+      transition: 0.5s;
+      margin-bottom: 3px;
+    }
+  }
+}

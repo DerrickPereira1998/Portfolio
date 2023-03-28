@@ -1,0 +1,155 @@
+@import url('https:fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https:fonts.googleapis.com/css2?family=Do+Hyeon&family=Montserrat&display=swap');
+
+@import "styles/reset";
+@import "styles/colors";
+
+.header {
+  &__light {
+    background-color: $teal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    transition: 1s;
+  }
+  &__dark {
+    background-color: $darkgray;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    transition: 1s
+  }
+}
+
+.logo {
+  height: 46px;
+  width: 40px;
+  font-family: 'Do Hyeon', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin: 7px 0 0 15px;
+  transition: 1s;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__light {
+    color: $darkgray;
+  }
+
+  &__dark {
+    color: $teal;
+  }
+}
+
+.navlinks {
+  list-style: none;
+
+  &__li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+}
+
+.itens {
+  &__light {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+    transition: 1s;
+    color: $darkgray;
+
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+  &__dark {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+    transition: 1s;
+    color: $teal;
+
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.divfinal{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+  &__contato {
+    &__light {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 2s;
+  
+      &:hover {
+        background-color: $white;
+        color: $darkgray
+      }
+  
+      background-color: $darkgray;
+      color: $teal;
+    }
+  
+    &__dark {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 2s;
+  
+      &:hover {
+        background-color: $white;
+      }
+      background-color: $teal;
+    }
+  }
+  &__modebutton {
+    display: inline;
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+

@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styles from './styles/App.module.scss'
+import Navbar from './components/Navbar';
+import Presentation from 'components/Presentation';
+import { ThemeContext } from 'context/themeContext';
+import { useContext } from 'react'
+import classNames from 'classnames';
+import Footer from 'components/Footer';
+import AboutMe from 'components/Aboutme';
+import WhereWorked from 'components/WhereWorked';
 
 function App() {
+
+  const { theme } = useContext(ThemeContext)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className={classNames({
+      [styles.app]: true,
+      [styles[`app__${theme}`]]: true
+    })}>
+      <Navbar/>
+      <AboutMe/>
+      <WhereWorked/>
+      <Presentation/>
+      <Footer/>
+    </main>
   );
 }
 

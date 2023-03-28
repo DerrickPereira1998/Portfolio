@@ -1,0 +1,66 @@
+@import url('https:fonts.googleapis.com/css?family=Montserrat:500');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+$lightteal: #CBE4DE;
+$teal: #08DAC6;
+$trueteal: #008080;
+$darkteal: #0E8388;
+$darkerteal: #2E4F4F;
+$darkestteal: #004242;
+
+$darkgray: #201b1b;
+$whitegray: #c1c2c5;
+$white: #fff;
+$black: #000;
+
+$titlefont: 32px;
+
+@mixin colorthemes {
+    &__dark {
+        color: $teal;
+    }
+
+    &__light {
+        color: $darkgray;
+    }
+}
+
+@mixin colorborder {
+    &__dark {
+        border-color: $teal;
+    }
+
+    &__light {
+        border-color: $darkgray;
+    }
+}
+
+@mixin gradientAnimation($start, $going, $end, $transTime ) {
+    background-size: 100%;
+    background-image: linear-gradient($start 0.1% ,$going, $end);
+    position: relative;
+    z-index: 100;
+
+    &:before {
+        background-image: linear-gradient($going 1%, $end 30%, $going);
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        transition: opacity $transTime;
+    }
+
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+}
