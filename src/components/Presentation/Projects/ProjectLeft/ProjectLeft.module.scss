@@ -21,7 +21,7 @@
       text-align: left;
       font-size: $titlefont;
       transition: 1s;
-      @include colorthemes;
+      @include colorthemes($teal, $darkgray);
     }
     &__square {
       background-color: $black;
@@ -71,7 +71,7 @@
   &:last-child{
     padding-right:0;
   }
-  @include colorthemes;
+  @include colorthemes($teal, $darkgray);
   &__spacing{
     margin-right: 10px;
     transition: 1s;

@@ -1,0 +1,81 @@
+@import 'styles/reset';
+@import 'styles/colors';
+
+.section{
+  display: grid;
+  grid-template-columns: 45% auto;
+  grid-template-rows: 300px 200px 200px 100px;
+  &__title{
+    z-index: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 250px;
+    width: 55%;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    background-color: $teal;
+    color: $white;
+    font-size: 70px;
+    font-weight: 800;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 15%;
+  }
+  &__description{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 180px;
+    width: 70%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: $darkteal;
+    color: $white;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+  &__image{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 680px;
+    border-top-left-radius: 350px;
+    border-bottom-left-radius: 350px;
+    background-color: $aqua;
+  }
+}
+
+.contato{
+  z-index: 10;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 160px;
+  height: 30px;
+  padding-left: 5px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: $aquamarine;
+  position: fixed;
+  font-weight: 500;
+  top: 625px;
+  left: auto;
+  transition: 1s;
+  @include colorthemes($darkgray, $aquamarine);
+  @include colorback($aquamarine, $darkgray);
+  &__item{
+    margin-right: 10px;
+    margin-left: 25px;
+    &:last-child{
+      margin-right: 15px;
+      margin-left: 0;
+    }
+  }
+}

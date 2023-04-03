@@ -5,28 +5,18 @@
 @import "styles/colors";
 
 .header {
-  &__light {
-    background-color: $teal;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
-    transition: 1s;
-  }
-  &__dark {
-    background-color: $darkgray;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0px 0px;
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
-    transition: 1s
-  }
+  z-index: 10;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  transition: 1s;
+  @include colorback($darkgray, $teal);
 }
 
 .logo {
@@ -96,11 +86,12 @@
   }
 }
 
-.divfinal{
+.divfinal {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+
   &__contato {
     &__light {
       font-family: "Montserrat", sans-serif;
@@ -113,16 +104,16 @@
       border-radius: 50px;
       cursor: pointer;
       transition: 2s;
-  
+
       &:hover {
         background-color: $white;
         color: $darkgray
       }
-  
+
       background-color: $darkgray;
       color: $teal;
     }
-  
+
     &__dark {
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
@@ -134,13 +125,15 @@
       border-radius: 50px;
       cursor: pointer;
       transition: 2s;
-  
+
       &:hover {
         background-color: $white;
       }
+
       background-color: $teal;
     }
   }
+
   &__modebutton {
     display: inline;
     height: 40px;

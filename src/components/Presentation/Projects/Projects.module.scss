@@ -12,6 +12,6 @@
     margin-bottom: 50px;
     text-align: center;
     transition: 1s;
-    @include colorthemes;
+    @include colorthemes($teal, $darkgray);
   }
 }

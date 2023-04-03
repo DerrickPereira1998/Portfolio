@@ -13,7 +13,10 @@ export default function Footer() {
       <div className={styles.contatos}>
         <ul className={styles.contatos__list}>
           <li className={styles.contatos__list__listitem}>
-            <a className={styles.contatos__list__link} href="https://github.com/DerrickPereira1998/" target="_blank" rel='noreferrer'>
+            <a href="https://github.com/DerrickPereira1998/" target="_blank" rel='noreferrer' className={classNames({
+            [styles.contatos__list__link]: true,
+            [styles[`contatos__list__link__${theme}`]]: true
+          })}>
               <div className={styles.contatos__list__flexcontent}>
                 <div className={styles.contatos__list__listitem__listimage}>
                   <AiFillGithub size={60} />
@@ -28,7 +31,10 @@ export default function Footer() {
             </a>
           </li>
           <li className={styles.contatos__list__listitem}>
-            <a className={styles.contatos__list__link} href="https://github.com/DerrickPereira1998/" target="_blank" rel='noreferrer'>
+            <a href="https://github.com/DerrickPereira1998/" target="_blank" rel='noreferrer' className={classNames({
+            [styles.contatos__list__link]: true,
+            [styles[`contatos__list__link__${theme}`]]: true
+          })}>
               <div className={styles.contatos__list__flexcontent}>
                 <div className={styles.contatos__list__listitem__listimage}>
                   <AiFillLinkedin size={60} />

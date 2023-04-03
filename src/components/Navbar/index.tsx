@@ -9,7 +9,10 @@ export default function Navbar() {
   const { theme, setTheme } = useContext(ThemeContext)
 
   return (
-    <header className={styles[`header__${theme}`]}>
+    <header className={classnames({
+      [styles.header]: true,
+      [styles[`header__${theme}`]]: true
+    })}>
       <p className={classnames({
         [styles.logo]: true,
         [styles[`logo__${theme}`]]: true

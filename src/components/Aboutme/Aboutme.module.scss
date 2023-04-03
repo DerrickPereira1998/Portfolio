@@ -11,7 +11,7 @@
     margin-bottom: 50px;
     text-align: center;
     transition: 1s;
-    @include colorthemes;
+    @include colorthemes($teal, $darkgray);
   }
   &__content{
     display: flex;
@@ -29,7 +29,7 @@
     &__text{
       max-width: 45%;
       text-align: right;
-      @include colorthemes
+      @include colorthemes($teal, $darkgray);
     }
   }
 }

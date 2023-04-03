@@ -1,4 +1,4 @@
-import styles from './styles/App.module.scss'
+import styles from './styles/App.module.scss';
 import Navbar from './components/Navbar';
 import Presentation from 'components/Presentation';
 import { ThemeContext } from 'context/themeContext';
@@ -7,6 +7,7 @@ import classNames from 'classnames';
 import Footer from 'components/Footer';
 import AboutMe from 'components/Aboutme';
 import WhereWorked from 'components/WhereWorked';
+import Profile from 'components/Profile';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       [styles[`app__${theme}`]]: true
     })}>
       <Navbar/>
+      <Profile/>
       <AboutMe/>
       <WhereWorked/>
       <Presentation/>

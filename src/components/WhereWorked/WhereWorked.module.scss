@@ -11,7 +11,7 @@
     margin-bottom: 50px;
     text-align: center;
     transition: 1s;
-    @include colorthemes;
+    @include colorthemes($teal, $darkgray);
   }
 }
 
@@ -47,7 +47,7 @@
     align-items: center;
     height: 360px;
     text-align: left;
-    @include colorthemes;
+    @include colorthemes($teal, $darkgray);
     &__text{
       margin-left: 50px;
       margin-right: 50px;

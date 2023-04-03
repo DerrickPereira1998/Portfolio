@@ -11,20 +11,32 @@ $darkteal: #0E8388;
 $darkerteal: #2E4F4F;
 $darkestteal: #004242;
 
-$darkgray: #201b1b;
+$darkgray: #141111;
 $whitegray: #c1c2c5;
 $white: #fff;
 $black: #000;
+$aqua: aqua;
+$aquamarine: aquamarine;
 
 $titlefont: 32px;
 
-@mixin colorthemes {
+@mixin colorthemes($dark, $light){
     &__dark {
-        color: $teal;
+        color: $dark;
     }
 
     &__light {
-        color: $darkgray;
+        color: $light;
+    }
+}
+
+@mixin colorback($dark, $light){
+    &__dark {
+        background-color: $dark;
+    }
+
+    &__light {
+        background-color: $light;
     }
 }
 

@@ -14,9 +14,9 @@
     align-content: center;
     justify-content: space-evenly;
     &__link{
-      color: $teal;
       text-decoration: none;
       text-align: center;
+      @include colorthemes($teal, $darkgray);
     }
     &__flexcontent{
       display: flex;
@@ -36,15 +36,14 @@
 
 .copyright{
   font-weight: 500;
-  color: $lightteal;
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
-  padding-top: 20px;
+  margin-top: 40px;
   &__dark{
     color: $lightteal;
   }
   &__light{
-    color: $black;
+    color: $darkgray;
   }
 }
