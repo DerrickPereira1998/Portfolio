@@ -3,16 +3,16 @@ import { ThemeContext } from 'context/themeContext'
 import { useContext, useEffect } from 'react'
 import classNames from 'classnames'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
-//import AOS from 'aos'
-//import 'aos/dist/aos.css'
+import * as AOS from "aos"
+import 'aos/dist/aos.css'
 
 export default function Profile() {
   
   const { theme } = useContext(ThemeContext)
 
-  //useEffect(() => {
-    //  AOS.init({duration: 2000})
-  //}) data-aos='fade-up'
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }) 
 
   return (
     <section className={classNames({
@@ -20,7 +20,7 @@ export default function Profile() {
       [styles[`section__${theme}`]]: true
     })}>
       <div></div>
-      <div className={classNames({
+      <div data-aos='fade-up' className={classNames({
         [styles.section__title]: true,
         [styles[`section__title__${theme}`]]: true
       })}>
