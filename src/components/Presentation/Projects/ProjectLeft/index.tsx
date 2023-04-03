@@ -1,9 +1,11 @@
 import classNames from 'classnames'
 import { ThemeContext } from 'context/themeContext'
 import styles from './ProjectLeft.module.scss'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { BiLinkExternal } from 'react-icons/bi'
 import { FiGithub } from 'react-icons/fi'
+import * as AOS from "aos"
+import 'aos/dist/aos.css'
 
 interface Props {
   imagem: String,
@@ -18,8 +20,12 @@ export default function ProjectLeft({ imagem, titulo, descricao, tags, gitlink, 
 
   const { theme } = useContext(ThemeContext)
 
+  useEffect(() => {
+    AOS.init({duration: 1000})
+  }) 
+
   return (
-    <div className={styles.back}>
+    <div data-aos='fade-right' className={styles.back}>
       <img src={`${imagem}`} alt='Foto do projeto acerte a palavra' className={styles.back__img}></img>
       <div className={styles.back__content}>
         <h1 className={classNames({

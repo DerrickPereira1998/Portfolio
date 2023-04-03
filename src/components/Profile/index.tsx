@@ -20,23 +20,23 @@ export default function Profile() {
       [styles[`section__${theme}`]]: true
     })}>
       <div></div>
-      <div data-aos='fade-up' className={classNames({
+      <div data-aos='fade-right' className={classNames({
         [styles.section__title]: true,
         [styles[`section__title__${theme}`]]: true
       })}>
         Derrick Pereira
       </div>
-      <div className={classNames({
+      <div data-aos='fade-right' className={classNames({
         [styles.section__description]: true,
         [styles[`section__description__${theme}`]]: true
       })}>
         Desenvolvedor web e estudante de analise e desenvolvimento de sistemas
       </div>
-      <img alt='Foto de capa' className={classNames({
+      <img data-aos='fade-left' alt='Foto de capa' className={classNames({
         [styles.section__image]: true,
         [styles[`section__image__${theme}`]]: true
       })} />
-      <div className={classNames({
+      <div data-aos='fade-right' className={classNames({
         [styles.contato]: true,
         [styles[`contato__${theme}`]]: true
       })}>

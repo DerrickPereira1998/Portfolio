@@ -73,6 +73,7 @@
   &__item{
     margin-right: 10px;
     margin-left: 25px;
+    @include colorthemes($darkgray, $aquamarine);
     &:last-child{
       margin-right: 15px;
       margin-left: 0;

@@ -1,14 +1,20 @@
 import classNames from "classnames"
 import { ThemeContext } from "context/themeContext"
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import styles from './Aboutme.module.scss'
+import * as AOS from "aos"
+import 'aos/dist/aos.css'
 
 export default function AboutMe() {
 
   const { theme } = useContext(ThemeContext)
 
+  useEffect(() => {
+    AOS.init({duration: 1000})
+  }) 
+
   return (
-    <section>
+    <section data-aos='fade-up'>
       <h1 className={classNames({
         [styles.section__title]: true,
         [styles[`section__title__${theme}`]]: true
