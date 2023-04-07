@@ -50,33 +50,3 @@
   }
 }
 
-.contato{
-  z-index: 10;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  width: 160px;
-  height: 30px;
-  padding-left: 5px;
-  border-top-right-radius: 150px;
-  border-bottom-right-radius: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  background-color: $aquamarine;
-  position: fixed;
-  font-weight: 500;
-  top: 625px;
-  left: auto;
-  transition: 1s;
-  @include colorthemes($darkgray, $aquamarine);
-  @include colorback($aquamarine, $darkgray);
-  &__item{
-    margin-right: 10px;
-    margin-left: 25px;
-    @include colorthemes($darkgray, $aquamarine);
-    &:last-child{
-      margin-right: 15px;
-      margin-left: 0;
-    }
-  }
-}

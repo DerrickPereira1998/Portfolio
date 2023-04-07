@@ -20,6 +20,7 @@
       margin-bottom: 30px;
       text-align: left;
       font-size: $titlefont;
+      font-weight: 500;
       transition: 1s;
       @include colorthemes($teal, $darkgray);
     }

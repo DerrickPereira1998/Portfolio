@@ -2,10 +2,7 @@
 @import 'styles/colors';
 
 .section{
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+  height: 100vh;
   &__title{
     font-size: $titlefont;
     margin-bottom: 50px;
@@ -16,15 +13,14 @@
 }
 
 .display{
-  margin-bottom: 50px;
   margin-left: 20%;
-  height: 400px;
+  height: 60vh;
   width: 60%;
   border: 1px solid $teal;
   border-radius: 10px;
   &__options{
     width: 100%;
-    height: 40px;
+    height: 10%;
     display: flex;
     justify-content: space-evenly;
     &__button{
@@ -45,7 +41,7 @@
   &__content{
     display: flex;
     align-items: center;
-    height: 360px;
+    height: 90%;
     text-align: left;
     @include colorthemes($teal, $darkgray);
     &__text{

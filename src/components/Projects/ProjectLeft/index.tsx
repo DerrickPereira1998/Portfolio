@@ -56,13 +56,13 @@ export default function ProjectLeft({ imagem, titulo, descricao, tags, gitlink, 
             [styles.link__spacing]: true,
             [styles[`link__spacing__${theme}`]]: true
           })}>
-            <BiLinkExternal />
+            <FiGithub />
           </a>
           <a href={`${gitlink}`} target='_blank' rel="noreferrer" className={classNames({
             [styles.link__spacing]: true,
             [styles[`link__spacing__${theme}`]]: true
           })}>
-            <FiGithub />
+            <BiLinkExternal />
           </a>
         </div>
       </div>

@@ -1,22 +1,49 @@
-@import url('https:fonts.googleapis.com/css?family=Montserrat:500');
-
 @import 'styles/reset';
 @import 'styles/colors';
 
 .section{
-  font-family: "Montserrat", sans-serif; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;  
+  justify-content: flex-end;
+}
+
+.title{
+  font-size: $titlefontbig;
+  text-align: center;
+  margin-bottom: 30px;
+  @include colorthemes($white, $white);
+  &__subtitle{
+    text-align: center;
+    margin-bottom: 11%;
+    @include colorthemes($aquamarine, $lightteal);
+  }
 }
 
 .contatos{
   &__list{
+    font-weight: 700;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
+    &__listitem{
+      border: solid 3px;
+      border-radius: 8px;
+      padding: 50px 50px;
+      @include colorborder($aquamarine, $aquamarine);
+      &:hover{
+        border-color: $lightteal;
+        color: $aqua
+      }
+    }
     &__link{
       text-decoration: none;
       text-align: center;
-      @include colorthemes($teal, $darkgray);
+      @include colorthemes($aquamarine, $aquamarine);
+
+  
     }
     &__flexcontent{
       display: flex;
@@ -28,6 +55,7 @@
       font-size: 32px
     }
     &__listbottomtext{
+      margin-top: 30px;
       text-align: center;
       font-size: 20px;
     }
@@ -41,9 +69,10 @@
   padding-bottom: 20px;
   margin-top: 40px;
   &__dark{
-    color: $lightteal;
+    color: $aquamarine;
   }
   &__light{
-    color: $darkgray;
+    font-weight: 400;
+    color: $white;
   }
 }

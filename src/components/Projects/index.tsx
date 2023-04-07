@@ -10,7 +10,7 @@ export default function Projects() {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <section className={styles.section}>
+    <section id='projects' className={styles.section}>
       <h1 className={classNames({
         [styles.section__title]: true,
         [styles[`section__title__${theme}`]]: true

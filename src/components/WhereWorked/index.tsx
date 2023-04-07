@@ -29,7 +29,7 @@ export default function WhereWorked() {
   }
 
   return (
-    <section data-aos='fade-up'>
+    <section id='experiences' data-aos='fade-up' className={styles.section}>
       <h1 className={classNames({
         [styles.section__title]: true,
         [styles[`section__title__${theme}`]]: true

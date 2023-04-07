@@ -19,13 +19,16 @@ $aqua: aqua;
 $aquamarine: aquamarine;
 
 $titlefont: 32px;
+$titlefontbig: 48px;
 
 @mixin colorthemes($dark, $light){
     &__dark {
+        transition: 1s;
         color: $dark;
     }
 
     &__light {
+        transition: 1s;
         color: $light;
     }
 }
@@ -40,13 +43,15 @@ $titlefont: 32px;
     }
 }
 
-@mixin colorborder {
+@mixin colorborder($dark, $light){
     &__dark {
-        border-color: $teal;
+        transition: 1s;
+        border-color: $dark;
     }
 
     &__light {
-        border-color: $darkgray;
+        transition: 1s;
+        border-color: $light;
     }
 }
 

@@ -2,13 +2,10 @@
 @import 'styles/colors';
 
 .section{
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+  height: 100vh;
   &__title{
     font-size: $titlefont;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     text-align: center;
     transition: 1s;
     @include colorthemes($teal, $darkgray);
@@ -17,10 +14,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
     &__image{
-      width: 180px;
-      height: 180px;
+      width: 360px;
+      height: 480px;
       margin-right: 50px;
       border-style: outset;
       border-width: 5px;

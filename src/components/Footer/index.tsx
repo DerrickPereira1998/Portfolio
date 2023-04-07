@@ -9,14 +9,29 @@ export default function Footer() {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <section className={styles.section}>
-      <div className={styles.contatos}>
+    <section id='contact' className={styles.section}>
+      <p className={classNames({
+        [styles.title]: true,
+        [styles[`title__${theme}`]]: true
+      })}>
+        Entre em contato!
+      </p>
+      <p className={classNames({
+        [styles.title__subtitle]: true,
+        [styles[`title__subtitle__${theme}`]]: true
+      })}>
+        Estou sempre a procura de novas oportunidades, me mande uma mensagem e a responderei assim que estiver disponível
+      </p>
+      <div>
         <ul className={styles.contatos__list}>
-          <li className={styles.contatos__list__listitem}>
-            <a href="https://github.com/DerrickPereira1998/" target="_blank" rel='noreferrer' className={classNames({
-            [styles.contatos__list__link]: true,
-            [styles[`contatos__list__link__${theme}`]]: true
+          <li className={classNames({
+            [styles.contatos__list__listitem]: true,
+            [styles[`contatos__list__listitem__${theme}`]]: true
           })}>
+            <a href="https://github.com/DerrickPereira1998/" target="_blank" rel='noreferrer' className={classNames({
+              [styles.contatos__list__link]: true,
+              [styles[`contatos__list__link__${theme}`]]: true
+            })}>
               <div className={styles.contatos__list__flexcontent}>
                 <div className={styles.contatos__list__listitem__listimage}>
                   <AiFillGithub size={60} />
@@ -30,11 +45,14 @@ export default function Footer() {
               </div>
             </a>
           </li>
-          <li className={styles.contatos__list__listitem}>
-            <a href="https://github.com/DerrickPereira1998/" target="_blank" rel='noreferrer' className={classNames({
-            [styles.contatos__list__link]: true,
-            [styles[`contatos__list__link__${theme}`]]: true
+          <li className={classNames({
+            [styles.contatos__list__listitem]: true,
+            [styles[`contatos__list__listitem__${theme}`]]: true
           })}>
+            <a href="https://github.com/DerrickPereira1998/" target="_blank" rel='noreferrer' className={classNames({
+              [styles.contatos__list__link]: true,
+              [styles[`contatos__list__link__${theme}`]]: true
+            })}>
               <div className={styles.contatos__list__flexcontent}>
                 <div className={styles.contatos__list__listitem__listimage}>
                   <AiFillLinkedin size={60} />
@@ -49,12 +67,12 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-      </div>
-      <div className={classNames({
-            [styles.copyright]: true,
-            [styles[`copyright__${theme}`]]: true
-          })}>
-        Copyright © 2023 Derrick Pereira
+        <div className={classNames({
+          [styles.copyright]: true,
+          [styles[`copyright__${theme}`]]: true
+        })}>
+          Copyright © 2023 Derrick Pereira
+        </div>
       </div>
     </section>
   )

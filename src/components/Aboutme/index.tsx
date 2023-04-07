@@ -14,7 +14,7 @@ export default function AboutMe() {
   }) 
 
   return (
-    <section data-aos='fade-up'>
+    <section id='aboutme' data-aos='fade-up' className={styles.section}>
       <h1 className={classNames({
         [styles.section__title]: true,
         [styles[`section__title__${theme}`]]: true
@@ -36,7 +36,7 @@ export default function AboutMe() {
         aaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaa aaaaaaaaaa
         aaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaa aaaaaaaaaa
         aaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaa aaaaaaaaaa
-      </p>
+        </p>
       </div>
     </section>
   )
