@@ -16,7 +16,7 @@
   @include colorthemes($white, $white);
   &__subtitle{
     text-align: center;
-    margin-bottom: 11%;
+    margin-bottom: 10%;
     @include colorthemes($aquamarine, $lightteal);
   }
 }
@@ -32,18 +32,17 @@
       border: solid 3px;
       border-radius: 8px;
       padding: 50px 50px;
-      @include colorborder($aquamarine, $aquamarine);
+      @include colorborder($aquamarine, $lightteal);
       &:hover{
-        border-color: $lightteal;
-        color: $aqua
+        border-color: $white;
+        color: $white
       }
     }
     &__link{
       text-decoration: none;
       text-align: center;
-      @include colorthemes($aquamarine, $aquamarine);
+      @include colorthemes($aquamarine, $lightteal);
 
-  
     }
     &__flexcontent{
       display: flex;
@@ -67,7 +66,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 100px;
   &__dark{
     color: $aquamarine;
   }

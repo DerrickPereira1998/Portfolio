@@ -31,7 +31,7 @@ export default function Profile() {
       })}>
         Desenvolvedor web e estudante de análise e desenvolvimento de sistemas
       </div>
-      <img data-aos='fade-left' alt='Foto de capa' className={classNames({
+      <img src='images/Foto_de_capa.png' data-aos='fade-left' alt='Foto de capa' className={classNames({
         [styles.section__image]: true,
         [styles[`section__image__${theme}`]]: true
       })} />

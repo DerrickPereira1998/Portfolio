@@ -24,14 +24,14 @@ export default function Footer() {
       </p>
       <div>
         <ul className={styles.contatos__list}>
-          <li className={classNames({
-            [styles.contatos__list__listitem]: true,
-            [styles[`contatos__list__listitem__${theme}`]]: true
-          })}>
-            <a href="https://github.com/DerrickPereira1998/" target="_blank" rel='noreferrer' className={classNames({
+          <a href="https://github.com/DerrickPereira1998/" target="_blank" rel='noreferrer' className={classNames({
               [styles.contatos__list__link]: true,
               [styles[`contatos__list__link__${theme}`]]: true
             })}>
+            <li className={classNames({
+  [styles.contatos__list__listitem]: true,
+  [styles[`contatos__list__listitem__${theme}`]]: true
+})}>
               <div className={styles.contatos__list__flexcontent}>
                 <div className={styles.contatos__list__listitem__listimage}>
                   <AiFillGithub size={60} />
@@ -43,16 +43,16 @@ export default function Footer() {
               <div className={styles.contatos__list__listbottomtext}>
                 Veja meus projetos
               </div>
-            </a>
-          </li>
-          <li className={classNames({
-            [styles.contatos__list__listitem]: true,
-            [styles[`contatos__list__listitem__${theme}`]]: true
-          })}>
-            <a href="https://github.com/DerrickPereira1998/" target="_blank" rel='noreferrer' className={classNames({
+            </li>
+          </a>
+          <a href="https://linkedin.com/in/derrickpereira1998" target="_blank" rel='noreferrer' className={classNames({
               [styles.contatos__list__link]: true,
               [styles[`contatos__list__link__${theme}`]]: true
             })}>
+            <li className={classNames({
+  [styles.contatos__list__listitem]: true,
+  [styles[`contatos__list__listitem__${theme}`]]: true
+})}>
               <div className={styles.contatos__list__flexcontent}>
                 <div className={styles.contatos__list__listitem__listimage}>
                   <AiFillLinkedin size={60} />
@@ -64,8 +64,8 @@ export default function Footer() {
               <div className={styles.contatos__list__listbottomtext}>
                 Visite meu Linkedin
               </div>
-            </a>
-          </li>
+            </li>
+          </a>
         </ul>
         <div className={classNames({
           [styles.copyright]: true,

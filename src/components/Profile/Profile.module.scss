@@ -42,11 +42,12 @@
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 3;
-    height: 680px;
+    grid-row-end: 4;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10vh;
     border-top-left-radius: 350px;
     border-bottom-left-radius: 350px;
-    background-color: $aqua;
   }
 }
 

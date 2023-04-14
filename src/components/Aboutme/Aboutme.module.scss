@@ -15,8 +15,8 @@
     align-items: center;
     justify-content: center;
     &__image{
-      width: 360px;
-      height: 480px;
+      width: fit-content;
+      height: fit-content;
       margin-right: 50px;
       border-style: outset;
       border-width: 5px;
@@ -24,7 +24,7 @@
     }
     &__text{
       max-width: 45%;
-      text-align: right;
+      text-align: left;
       @include colorthemes($teal, $darkgray);
     }
   }
