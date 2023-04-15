@@ -52,13 +52,13 @@ export default function ProjectLeft({ imagem, titulo, descricao, tags, gitlink, 
           [styles.link]: true,
           [styles[`link__${theme}`]]: true
         })}>
-          <a href={`${weblink}`} target='_blank' rel="noreferrer" className={classNames({
+          <a href={`${gitlink}`} target='_blank' rel="noreferrer" className={classNames({
             [styles.link__spacing]: true,
             [styles[`link__spacing__${theme}`]]: true
           })}>
             <FiGithub />
           </a>
-          <a href={`${gitlink}`} target='_blank' rel="noreferrer" className={classNames({
+          <a href={`${weblink}`} target='_blank' rel="noreferrer" className={classNames({
             [styles.link__spacing]: true,
             [styles[`link__spacing__${theme}`]]: true
           })}>

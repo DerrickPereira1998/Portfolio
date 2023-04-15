@@ -23,8 +23,8 @@ export default function Navbar() {
       </Link>
       <nav>
         <ul className={styles.navlinks}>
-          <li className={styles.navlinks__li}><Link className={styles[`itens__${theme}`]} to='aboutme' smooth={true} offset={-80} duration={800}>Sobre mim</Link></li>
-          <li className={styles.navlinks__li}><Link className={styles[`itens__${theme}`]} to='experiences' smooth={true} offset={-80} duration={1000}>Experiência</Link></li>
+          <li className={styles.navlinks__li}><Link className={styles[`itens__${theme}`]} to='aboutme' smooth={true} offset={-152} duration={800}>Sobre mim</Link></li>
+          <li className={styles.navlinks__li}><Link className={styles[`itens__${theme}`]} to='experiences' smooth={true} offset={-160} duration={1000}>Experiência</Link></li>
           <li className={styles.navlinks__li}><Link className={styles[`itens__${theme}`]} to='projects' smooth={true} offset={-80} duration={800}>Projetos</Link></li>
           <li className={styles.navlinks__li}><Link className={styles[`itens__${theme}`]} to='contact' smooth={true} duration={800}>Contato</Link></li>
         </ul>

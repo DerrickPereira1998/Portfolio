@@ -22,21 +22,21 @@ export default function Projects() {
         titulo='Jogo da forca'
         descricao='Jogo da forca criado com Javascript contendo a utilização da Web Speech API, possibilitando o jogo a ser jogado utilizando apenas o voz do jogador junto ao microfone do dispositivo'
         tags={['HTML','CSS','JavaScript','API']}
-        gitlink='/'
-        weblink='/'
+        gitlink='https://github.com/DerrickPereira1998/JogoDaForca'
+        weblink='https://adivinhe-a-palavra.vercel.app/'
       />
       <ProjectLeft 
-        imagem='images/Acerte_a_palavra.png'
-        titulo='Jogo da forca'
-        descricao='Jogo da forca criado com Javascript contendo a utilização da Web Speech API, possibilitando o jogo a ser jogado utilizando apenas o voz do jogador junto ao microfone do dispositivo'
-        tags={['HTML','CSS','JavaScript','API']}
-        gitlink='/'
-        weblink='/'
+        imagem='images/Blog_de_postagens.png'
+        titulo='Blog de posts'
+        descricao='Projeto de crud criado com conexão a uma base de dados, cadastro de usuários criado utilizando a API passport'
+        tags={['JavaScript','MongoDB', 'Express', 'Passport']}
+        gitlink='https://github.com/DerrickPereira1998/BlogApp'
+        weblink='https://blogapp-ylzt.onrender.com/'
       />
       <ProjectRight 
         imagem='images/Acerte_a_palavra.png'
-        titulo='Jogo da forca'
-        descricao='Jogo da forca criado com Javascript contendo a utilização da Web Speech API, possibilitando o jogo a ser jogado utilizando apenas o voz do jogador junto ao microfone do dispositivo'
+        titulo='TrueTravek'
+        descricao='Projeto de agendamento'
         tags={['HTML','CSS','JavaScript','API']}
         gitlink='/'
         weblink='/'
