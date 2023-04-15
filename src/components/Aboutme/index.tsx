@@ -35,9 +35,9 @@ export default function AboutMe() {
         })}>
           Olá! Meu nome é Derrick e sou um desenvolvedor web apaixonado por criar soluções inovadoras e funcionais para problemas complexos. <br/><br/>
           
-          Estudante de Analise e Desenvolvimento de Sistemas com uma paixão por desenvolvimento de software em busca de novas oportunidades, estou disposto a me dedicar a aprender e a superar expectativas. <br/><br/>
+          Estudante de análise e desenvolvimento de sistemas com uma paixão por desenvolvimento de software em busca de novas oportunidades, estou disposto a me dedicar a aprender e a superar expectativas. <br/><br/>
 
-          Possuo experiência profissional de um ano com desevolvimento de software que adquiri através do meu cargo de Desenvolvedor Outsystems Junior durante meu período na Truewind, que também me proporcionou experiência com varias tecnologias (HTML, CSS JavaScript e SQL) especialmente na plataforma Outsystems. <br/><br/>
+          Possuo experiência profissional de um ano com desenvolvimento de software que adquiri através do meu cargo de Desenvolvedor Outsystems Junior durante meu período na Truewind, que também me proporcionou experiência com várias tecnologias (HTML, CSS JavaScript e SQL) especialmente na plataforma Outsystems. <br/><br/>
           
           Durante este período, estive em projetos nos quais ajudei no desenvolvimento de aplicações web e reactive, utilizando metodologias ágeis, como Scrum; Além de ferramentas como Jira e Azure. <br/><br/>
 

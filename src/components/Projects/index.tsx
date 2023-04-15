@@ -34,12 +34,12 @@ export default function Projects() {
         weblink='https://blogapp-ylzt.onrender.com/'
       />
       <ProjectRight 
-        imagem='images/Acerte_a_palavra.png'
-        titulo='TrueTravek'
-        descricao='Projeto de agendamento'
-        tags={['HTML','CSS','JavaScript','API']}
-        gitlink='/'
-        weblink='/'
+        imagem='images/TrueTravel.png'
+        titulo='TrueTravel'
+        descricao='Projeto de agendamento de viagens criado utilizando a linguagem Outsystems. Completo com o seu próprio fluxo de negócio, tipos de usuários e banco de dados (mais detalhes como as contas para login e um maior entendimento do aplicativo no github)'
+        tags={['Outsystems','JavaScript','MySQL']}
+        gitlink='https://github.com/DerrickPereira1998/TrueTravel'
+        weblink='https://personal-9b7bfgu4.outsystemscloud.com/TrueTravel/'
       />
     </section>
   )
