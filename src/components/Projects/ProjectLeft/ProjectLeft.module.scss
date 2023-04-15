@@ -3,11 +3,15 @@
 .back {
   height: 370px;
   width: 800px;
-  &__img {
+  &__imglink{
     height: 300px;
     width: 500px;
     float: right;
     background-size: 100%;
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
   }
   &__content {
     display: flex;

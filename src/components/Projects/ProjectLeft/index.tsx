@@ -26,7 +26,7 @@ export default function ProjectLeft({ imagem, titulo, descricao, tags, gitlink, 
 
   return (
     <div data-aos='fade-right' className={styles.back}>
-      <a><img src={`${imagem}`} alt='Foto do projeto acerte a palavra' className={styles.back__img}></img></a>
+      <a href={`${weblink}`} target='_blank' rel="noreferrer" className={styles.back__imglink}><img src={`${imagem}`} alt='Foto do projeto acerte a palavra' className={styles.back__img}></img></a>
       <div className={styles.back__content}>
         <h1 className={classNames({
           [styles.back__content__titulo]: true,
