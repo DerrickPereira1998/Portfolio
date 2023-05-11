@@ -1,0 +1,11 @@
+@import './reset';
+@import './colors';
+
+.app{
+  &__light{
+    @include gradientAnimation($teal, $trueteal, $darkteal, 1s)
+  }
+  &__dark{
+    @include gradientAnimation($darkgray, $darkgray, $darkestteal, 1s)
+  }
+}

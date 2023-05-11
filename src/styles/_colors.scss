@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+$lightteal: #CBE4DE;
+$teal: #08DAC6;
+$trueteal: #008080;
+$darkteal: #0E8388;
+$darkerteal: #2E4F4F;
+$darkestteal: #004242;
+
+$darkgray: #141111;
+$whitegray: #c1c2c5;
+$white: #fff;
+$black: #000;
+$aqua: aqua;    
+$aquamarine: aquamarine;
+
+$titlefont: 32px;
+$titlefontbig: 48px;
+
+@mixin colorthemes($dark, $light){
+    &__dark {
+        transition: 1s;
+        color: $dark;
+    }
+
+    &__light {
+        transition: 1s;
+        color: $light;
+    }
+}
+
+@mixin colorback($dark, $light){
+    &__dark {
+        background-color: $dark;
+    }
+
+    &__light {
+        background-color: $light;
+    }
+}
+
+@mixin colorborder($dark, $light){
+    &__dark {
+        transition: 1s;
+        border-color: $dark;
+    }
+
+    &__light {
+        transition: 1s;
+        border-color: $light;
+    }
+}
+
+@mixin gradientAnimation($start, $going, $end, $transTime ) {
+    background-size: 100%;
+    background-image: linear-gradient($start 0.1% ,$going, $end);
+    position: relative;
+    z-index: 100;
+
+    &:before {
+        background-image: linear-gradient($going 1%, $end 30%, $going);
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        transition: opacity $transTime;
+    }
+
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+}

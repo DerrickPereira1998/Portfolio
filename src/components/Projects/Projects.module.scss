@@ -1,0 +1,17 @@
+@import 'styles/reset';
+@import 'styles/colors';
+
+.section{
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  &__title{
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+    transition: 1s;
+    @include colorthemes($teal, $darkgray);
+  }
+}

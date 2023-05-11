@@ -1,0 +1,77 @@
+@import 'styles/reset';
+@import 'styles/colors';
+
+.section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;  
+  justify-content: flex-end;
+}
+
+.title{
+  font-size: $titlefontbig;
+  text-align: center;
+  margin-bottom: 30px;
+  @include colorthemes($white, $white);
+  &__subtitle{
+    text-align: center;
+    margin-bottom: 10%;
+    @include colorthemes($aquamarine, $lightteal);
+  }
+}
+
+.contatos{
+  &__list{
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    &__listitem{
+      border: solid 3px;
+      border-radius: 8px;
+      padding: 50px 50px;
+      @include colorborder($aquamarine, $lightteal);
+      &:hover{
+        border-color: $white;
+        color: $white
+      }
+    }
+    &__link{
+      text-decoration: none;
+      text-align: center;
+      @include colorthemes($aquamarine, $lightteal);
+
+    }
+    &__flexcontent{
+      display: flex;
+    }
+    &__listtext{
+      margin-top: 15px;
+      margin-left: 10px;
+      height: 10px;
+      font-size: 32px
+    }
+    &__listbottomtext{
+      margin-top: 30px;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+}
+
+.copyright{
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-top: 100px;
+  &__dark{
+    color: $aquamarine;
+  }
+  &__light{
+    font-weight: 400;
+    color: $white;
+  }
+}

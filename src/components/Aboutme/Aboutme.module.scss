@@ -1,0 +1,31 @@
+@import 'styles/reset';
+@import 'styles/colors';
+
+.section{
+  height: 100vh;
+  &__title{
+    font-size: $titlefont;
+    margin-bottom: 80px;
+    text-align: center;
+    transition: 1s;
+    @include colorthemes($teal, $darkgray);
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__image{
+      width: fit-content;
+      height: fit-content;
+      margin-right: 50px;
+      border-style: outset;
+      border-width: 5px;
+      border-color: $teal;
+    }
+    &__text{
+      max-width: 45%;
+      text-align: left;
+      @include colorthemes($lightteal, $black);
+    }
+  }
+}
